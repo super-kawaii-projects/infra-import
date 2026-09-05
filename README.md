@@ -45,12 +45,12 @@ terraform plan          # should show 0 changes
 ### Quick install (Linux/macOS)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/OWNER/infra-import/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/super-kawaii-projects/infra-import/main/install.sh | bash
 ```
 
 ### GitHub Releases
 
-Download the binary for your platform from [Releases](https://github.com/OWNER/infra-import/releases/latest):
+Download the binary for your platform from [Releases](https://github.com/super-kawaii-projects/infra-import/releases/latest):
 
 | Platform | Binary |
 |----------|--------|
@@ -64,13 +64,13 @@ Download the binary for your platform from [Releases](https://github.com/OWNER/i
 
 ```bash
 docker run --rm -v ~/.aws:/root/.aws -v ./imported:/output \
-  ghcr.io/OWNER/infra-import --region us-east-1 --output /output
+  ghcr.io/super-kawaii-projects/infra-import --region us-east-1 --output /output
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/OWNER/infra-import.git
+git clone https://github.com/super-kawaii-projects/infra-import.git
 cd infra-import
 cargo install --path .
 ```

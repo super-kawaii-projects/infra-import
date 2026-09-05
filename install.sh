@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # infra-import installer
-# Usage: curl -fsSL https://raw.githubusercontent.com/OWNER/infra-import/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/super-kawaii-projects/infra-import/main/install.sh | bash
 
-REPO="OWNER/infra-import"  # TODO: replace OWNER with your GitHub username
+REPO="super-kawaii-projects/infra-import"
 INSTALL_DIR="/usr/local/bin"
 BINARY="infra-import"
 
