@@ -1,0 +1,10 @@
+services:
+  infra-import:
+    build: .
+    volumes:
+      - ~/.aws:/root/.aws:ro
+      - ./imported:/output
+    environment:
+      - AWS_REGION=${AWS_REGION:-us-east-1}
+      - AWS_PROFILE=${AWS_PROFILE:-default}
+    command: ["--region", "${AWS_REGION:-us-east-1}", "--output", "/output", "--skip-errors"]
